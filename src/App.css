@@ -1,38 +1,77 @@
+.Page{
+  background-color: #eceff1;
+}
+
 .App {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.navbar{
+  text-align: center;
+  background-color: #263238;
+}
+
+
+.menu{
+  height:60px;
+  padding: 0px;
+  list-style-type: none;
+  overflow: hidden;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.item{
+  display: inline;
+  text-align: center;
+  padding: 0px 15px;
+  height: 60px;
+}
+.item a {
+  color: #FFFFFF;
+  height: 60px;
+  text-decoration: none;
+} 
+.item:hover{
+  padding-bottom: 20px;
+  border-bottom: 4px solid white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="file"] {
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.info{
+  text-align: start;
+}
+
+.custom-file-upload {
+  background-color: teal;
   color: white;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;  
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submitBtn{
+  background-color: teal;
+  color: white;
+  outline: none;
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;  
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
 }
