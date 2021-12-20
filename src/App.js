@@ -8,12 +8,16 @@ import {
 } from "react-router-dom";
 import UploadFile from './Components/UploadFile';
 import Gallery from './Components/Gallery';
+import {  Worker } from '@react-pdf-viewer/core';
+
 
 function FileUploadPage(){
 	 
 
 	return(
    <div className="Page">
+           <Worker workerUrl="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js">
+
       <Router>
         <nav className="navbar">
           <div className="menu">
@@ -35,7 +39,8 @@ function FileUploadPage(){
             <UploadFile/>
           </Route>
         </Switch>
-      </Router>      
+      </Router> 
+      </Worker>     
 		</div>
 	)
 }
